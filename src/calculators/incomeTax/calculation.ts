@@ -32,7 +32,13 @@ export const calculation = (
   const countryName = inputs.country === 'scotland' ? 'scotland' : 'others';
   const countryFigures = figures.countries.find((country) => country.name === countryName);
 
-  const claimableExpenses = valueCap(inputs.selfEmployedExpenses, 1000);
+  // const claimableExpenses = valueCap(inputs.selfEmployedExpenses, 1000);
+  const claimableExpenses =
+    inputs.selfEmployedExpenses > 1000
+      ? inputs.selfEmployedExpenses
+      : inputs.selfEmployedIncome >= 1000
+      ? 1000
+      : inputs.selfEmployedIncome;
 
   const totalEarnings = (() => {
     // add relevant inputs to total earnings
