@@ -1,5 +1,5 @@
 export interface AnnualFigure {
-  year: '2020-21' | '2021-22' | '2022-23';
+  year: '2020-21' | '2021-22' | '2022-23' | '2023-24';
   rates: {
     ordinary: number;
     upper: number;
@@ -66,6 +66,23 @@ export const annualFigures: AnnualFigure[] = [
     bands: {
       basic: 37700,
       higher: 150000,
+    },
+  },
+  {
+    year: '2023-24',
+    rates: {
+      ordinary: 0.0875,
+      upper: 0.3375,
+      additional: 0.3935,
+    },
+    allowances: {
+      dividends: 1000,
+      personal: 12570,
+      limit: 100000,
+    },
+    bands: {
+      basic: 37700,
+      higher: 125140,
     },
   },
 ];

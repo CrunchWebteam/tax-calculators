@@ -1,5 +1,5 @@
 export interface AnnualFigure {
-  year: '2020-21' | '2021-22' | '2022-23';
+  year: '2020-21' | '2021-22' | '2022-23' | '2023-24';
   figures: {
     UPL: number;
     PT: number;
@@ -124,7 +124,7 @@ export const annualFigures: AnnualFigure[] = [
     year: '2022-23',
     figures: {
       UPL: 50270,
-      PT: 12570,
+      PT: 11908,
       SPT: 6725,
       LPL: 11908,
       eNIC: 5000,
@@ -134,12 +134,12 @@ export const annualFigures: AnnualFigure[] = [
         employee: {
           belowLEL: 0.0,
           LELtoPT: 0.0,
-          PTtoUEL: 0.1325,
-          aboveUEL: 0.0325,
+          PTtoUEL: 0.1273,
+          aboveUEL: 0.0273,
         },
         employer: {
           belowST: 0.0,
-          aboveST: 0.1505,
+          aboveST: 0.1453,
           STtoUEL: 0,
         },
       },
@@ -155,8 +155,48 @@ export const annualFigures: AnnualFigure[] = [
       class4: {
         belowSPT: 0.0,
         SPTtoLPL: 0.0,
-        LPLtoUPL: 0.1025,
-        aboveUPL: 0.0325,
+        LPLtoUPL: 0.0973,
+        aboveUPL: 0.0273,
+      },
+    },
+  },
+  {
+    year: '2023-24',
+    figures: {
+      UPL: 50270,
+      PT: 12570,
+      SPT: 6725,
+      LPL: 12570,
+      eNIC: 5000,
+    },
+    ni: {
+      class1: {
+        employee: {
+          belowLEL: 0.0,
+          LELtoPT: 0.0,
+          PTtoUEL: 0.12,
+          aboveUEL: 0.02,
+        },
+        employer: {
+          belowST: 0.0,
+          aboveST: 0.138,
+          STtoUEL: 0,
+        },
+      },
+      class1a: {
+        employer: 0.138,
+      },
+      class2: {
+        belowSPT: 0,
+        SPTtoLPL: 0,
+        LPLtoUPL: 3.45,
+        aboveUPL: 3.45,
+      },
+      class4: {
+        belowSPT: 0.0,
+        SPTtoLPL: 0.0,
+        LPLtoUPL: 0.09,
+        aboveUPL: 0.02,
       },
     },
   },

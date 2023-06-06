@@ -33,7 +33,7 @@ export interface PostGraduateLoans {
 }
 
 export interface AnnualFigure {
-  year: '2020-21' | '2021-22' | '2022-23';
+  year: '2020-21' | '2021-22' | '2022-23' | '2023-24';
   studentLoans: StudentLoans;
   postgraduateLoans: PostGraduateLoans;
 }
@@ -122,6 +122,41 @@ export const annualFigures: AnnualFigure[] = [
       },
       plan4: {
         threshold: 25375,
+        rate: 0.09,
+      },
+    },
+    postgraduateLoans: {
+      england: {
+        threshold: 21000,
+        rate: 0.06,
+      },
+      scotland: {
+        threshold: 18330,
+        rate: 0.09,
+      },
+      wales: {
+        threshold: 21000,
+        rate: 0.06,
+      },
+      'northern-ireland': {
+        threshold: 18330,
+        rate: 0.09,
+      },
+    },
+  },
+  {
+    year: '2023-24',
+    studentLoans: {
+      plan1: {
+        threshold: 22095,
+        rate: 0.09,
+      },
+      plan2: {
+        threshold: 27295,
+        rate: 0.09,
+      },
+      plan4: {
+        threshold: 27660,
         rate: 0.09,
       },
     },
