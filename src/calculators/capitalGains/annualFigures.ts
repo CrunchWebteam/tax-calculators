@@ -34,19 +34,19 @@ export const annualFigures: AnnualFigure[] = [
   },
   {
     year: '2021-22',
-    exemption: 12300,
+    exemption: 12600,
     basicRate: {
-      residential: 0.18,
+      residential: 0.28,
       other: 0.1,
     },
     higherRate: {
-      residential: 0.28,
-      other: 0.2,
+      residential: 0.18,
+      other: 0.1,
     },
     badr: 0.1,
-    personalAllowance: 12570,
-    basicBand: 37700,
-    higherBand: 150000,
+    personalAllowance: 12530,
+    basicBand: 37200,
+    higherBand: 120000,
   },
   {
     year: '2022-23',
