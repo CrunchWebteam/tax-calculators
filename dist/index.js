@@ -172,6 +172,21 @@
         bands: {
             basic: 37700,
             higher: 125140
+        }, {
+        year: "2024-25",
+        rates: {
+            ordinary: .0875,
+            upper: .3375,
+            additional: .3935
+        },
+        allowances: {
+            dividends: 1e3,
+            personal: 12570,
+            limit: 1e5
+        },
+        bands: {
+            basic: 37700,
+            higher: 125140
         }
     }];
     var A = [{
@@ -426,6 +441,69 @@
                 }
             }
         }]
+    },{
+        year: "2024-25",
+        countries: [{
+            name: "scotland",
+            brackets: {
+                allowance: {
+                    name: "allowance",
+                    rate: 0,
+                    from: 0,
+                    band: 12570
+                },
+                starter: {
+                    name: "starter",
+                    rate: .19,
+                    from: 12570
+                },
+                basic: {
+                    name: "basic",
+                    rate: .2,
+                    from: 14732
+                },
+                intermediate: {
+                    name: "intermediate",
+                    rate: .21,
+                    from: 25688
+                },
+                higher: {
+                    name: "higher",
+                    rate: .42,
+                    from: 43662
+                },
+                additional: {
+                    name: "additional",
+                    rate: .47,
+                    from: 125140
+                }
+            }
+        }, {
+            name: "others",
+            brackets: {
+                allowance: {
+                    name: "allowance",
+                    rate: 0,
+                    from: 0,
+                    band: 12570,
+                    incomeLimit: 1e5
+                },
+                basic: {
+                    name: "basic",
+                    rate: .2,
+                    band: 37700
+                },
+                higher: {
+                    name: "higher",
+                    rate: .4
+                },
+                additional: {
+                    name: "additional",
+                    rate: .45,
+                    from: 125140
+                }
+            }
+        }]
     }];
     var F = [{
         year: "2020-21",
@@ -471,6 +549,20 @@
         }
     }, {
         year: "2023-24",
+        pre10: {
+            car: .45,
+            van: .45,
+            motorcycle: .24,
+            bicycle: .2
+        },
+        post10: {
+            car: .25,
+            van: .25,
+            motorcycle: .24,
+            bicycle: .2
+        }
+    }, {
+        year: "2024-25",
         pre10: {
             car: .45,
             van: .45,
@@ -640,6 +732,45 @@
                 aboveUPL: .02
             }
         }
+    }, {
+        year: "2024-25",
+        figures: {
+            UPL: 50270,
+            PT: 12570,
+            SPT: 6725,
+            LPL: 12570,
+            eNIC: 5e3
+        },
+        ni: {
+            class1: {
+                employee: {
+                    belowLEL: 0,
+                    LELtoPT: 0,
+                    PTtoUEL: .12,
+                    aboveUEL: .02
+                },
+                employer: {
+                    belowST: 0,
+                    aboveST: .138,
+                    STtoUEL: 0
+                }
+            },
+            class1a: {
+                employer: .138
+            },
+            class2: {
+                belowSPT: 0,
+                SPTtoLPL: 0,
+                LPLtoUPL: 3.45,
+                aboveUPL: 3.45
+            },
+            class4: {
+                belowSPT: 0,
+                SPTtoLPL: 0,
+                LPLtoUPL: .09,
+                aboveUPL: .02
+            }
+        }
     }];
     var k = [{
         year: "2020-21",
@@ -745,6 +876,40 @@
         }
     }, {
         year: "2023-24",
+        studentLoans: {
+            plan1: {
+                threshold: 22095,
+                rate: .09
+            },
+            plan2: {
+                threshold: 27295,
+                rate: .09
+            },
+            plan4: {
+                threshold: 27660,
+                rate: .09
+            }
+        },
+        postgraduateLoans: {
+            england: {
+                threshold: 21e3,
+                rate: .06
+            },
+            scotland: {
+                threshold: 18330,
+                rate: .09
+            },
+            wales: {
+                threshold: 21e3,
+                rate: .06
+            },
+            "northern-ireland": {
+                threshold: 18330,
+                rate: .09
+            }
+        }
+    }, {
+        year: "2024-25",
         studentLoans: {
             plan1: {
                 threshold: 22095,
