@@ -93,6 +93,21 @@
         personalAllowance: 12570,
         basicBand: 37700,
         higherBand: 125140
+    }, {
+        year: "2024-25",
+        exemption: 6e3,
+        basicRate: {
+            residential: .16,
+            other: .1
+        },
+        higherRate: {
+            residential: .23,
+            other: .2
+        },
+        badr: .1,
+        personalAllowance: 12550,
+        basicBand: 37600,
+        higherBand: 125130
     }];
     var S = [{
         year: "2020-21",
