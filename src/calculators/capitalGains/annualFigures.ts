@@ -20,17 +20,17 @@ export const annualFigures: AnnualFigure[] = [
     year: '2020-21',
     exemption: 12300,
     basicRate: {
-      residential: 0.18,
+      residential: 0.1,
       other: 0.1,
     },
     higherRate: {
-      residential: 0.28,
+      residential: 0.2,
       other: 0.2,
     },
     badr: 0.1,
-    personalAllowance: 12500,
-    basicBand: 37500,
-    higherBand: 150000,
+    personalAllowance: 13500,
+    basicBand: 47500,
+    higherBand: 160000,
   },
   {
     year: '2021-22',
