@@ -93,7 +93,7 @@ export const annualFigures: AnnualFigure[] = [
       additional: 0.3935,
     },
     allowances: {
-      dividends: 1000,
+      dividends: 500,
       personal: 12570,
       limit: 100000,
     },
@@ -101,5 +101,5 @@ export const annualFigures: AnnualFigure[] = [
       basic: 37700,
       higher: 125140,
     },
-  }
+  },
 ];

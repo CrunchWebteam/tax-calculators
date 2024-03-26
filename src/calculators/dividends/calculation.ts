@@ -1,6 +1,12 @@
 import type { AnnualFigure } from './annualFigures';
 
 export interface CalculationInputs {
+  isSelfEmployed: any;
+  annualSalary: any;
+  isEmployed: any;
+  selfEmployedIncome: number;
+  selfEmployedExpenses: number;
+  country: string;
   dividendIncome: number;
   otherIncome: number;
 }

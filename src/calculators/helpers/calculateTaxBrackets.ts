@@ -1,4 +1,5 @@
 export interface TaxBracket {
+  taxAtBracket: number;
   name: string;
   rate: number;
   from: number;
